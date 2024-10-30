@@ -20,14 +20,14 @@ public class MiHilo extends Thread {
             // EJECUCIÓN
             if (letra != '*') {
                 try {
-                    CONTADOR++;
                     if (letra == 's') {
                         suspender.set(true);
                     } else if (letra == 'r') {
+                        suspender.set(false);
                         suspender.esperandoParaReanudar();
+                    } else {
+                        CONTADOR++;
                     }
-                    sleep(500);
-
                 } catch (InterruptedException e) {
                     System.out.println(e.getMessage());
                 }
@@ -45,24 +45,6 @@ public class MiHilo extends Thread {
         return CONTADOR;
     }
 
-    public static void main(String[] args) {
-        // ATRIBUTOS
-        Scanner sc = new Scanner(System.in);
-        MiHilo miHilo = new MiHilo();
-        char letra;
-        miHilo.start(); // inicia el hilo
-
-
-        System.out.println("Introduce un único caracter");
-        letra = sc.next().charAt(0);
-        while (letra != '*') {
-            miHilo.run(letra); // ejecuta el método `run` con el carácter especificado
-            System.out.println("Introduce una letra o un símbolo, es muy importante que sea un único caracter");
-            letra = sc.next().charAt(0);
-            miHilo.run(letra);
-        }
-
-
-    }
-
 }
+
+
