@@ -5,13 +5,16 @@ public class SolicitaSuspender {
 
     public synchronized void set(boolean b) {
         suspender = b;
-        notifyAll();
+        notifyAll(); // Notifica a los hilos que están en espera si cambia el estado de `suspender`
     }
 
-    public synchronized boolean esperandoParaReanudar() throws InterruptedException {
+    public synchronized void esperandoParaReanudar() throws InterruptedException {
         while (suspender) {
-            wait();
+            wait(); // Suspende el hilo hasta que se cambie el estado
         }
+    }
+
+    public synchronized boolean isSuspendido() {
         return suspender;
     }
 }

@@ -1,50 +1,47 @@
 package main.hilosActividades.Act2_4;
 
-import java.util.Scanner;
-
 public class MiHilo extends Thread {
-    SolicitaSuspender suspender = new SolicitaSuspender();
-    private boolean stopHilo = false;
-    private long CONTADOR = 0;
+    private SolicitaSuspender suspender = new SolicitaSuspender();
+    private boolean sigueHilo = true;
+    private int contador = 0;
 
-    public void Suspende() {
+    public void suspenderHilo() {
         suspender.set(true);
     }
 
-    public void Reanuda() {
+    public void reanudarHilo() {
         suspender.set(false);
     }
 
-    public void run(char letra) {
-        try {
-            // EJECUCIÓN
-            if (letra != '*') {
-                try {
-                    if (letra == 's') {
-                        suspender.set(true);
-                    } else if (letra == 'r') {
-                        suspender.set(false);
-                        suspender.esperandoParaReanudar();
-                    } else {
-                        CONTADOR++;
-                    }
-                } catch (InterruptedException e) {
-                    System.out.println(e.getMessage());
-                }
-            } else {
-                System.out.println(getCONTADOR());
-                stopHilo = true;
-            }
-        } catch (RuntimeException e) {
-            throw new RuntimeException(e);
+    public void finalizarHilo() {
+        sigueHilo = false;
+    }
+
+    // Incrementa si el hilo está activo
+    public synchronized void incrementarSiActivo() {
+        if (!suspender.isSuspendido() && sigueHilo) {
+            contador++;
         }
     }
 
+    @Override
+    public void run() {
+        while (sigueHilo) {
+            try {
+                // Suspende el hilo si está en estado de suspensión
+                suspender.esperandoParaReanudar();
 
-    public long getCONTADOR() {
-        return CONTADOR;
+                // Si no lo pongo se me va el ordenador, le hago una pausa
+                Thread.sleep(100);
+
+            } catch (InterruptedException e) {
+                System.out.println("Hilo interrumpido: " + e.getMessage());
+            }
+        }
+        System.out.println("Hilo finalizado. Valor final del contador: " + contador);
     }
 
+    public int getContador() {
+        return contador;
+    }
 }
-
-

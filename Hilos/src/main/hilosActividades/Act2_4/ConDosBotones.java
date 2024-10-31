@@ -62,7 +62,7 @@ public class ConDosBotones extends JFrame {
         // Inicia y ejecuta el hilo 1
         hilo1 = new Thread(() -> {
             while (!Thread.currentThread().isInterrupted()) { // Verifica si el hilo ha sido interrumpido
-                synchronized (this) { // Bloque sincronizado para control de suspensión
+                synchronized (this) { // Sincronizo para control de suspensión
                     while (suspenderHilo1) { // Si se suspende, espera a ser notificado
                         try {
                             wait();
@@ -72,9 +72,9 @@ public class ConDosBotones extends JFrame {
                     }
                 }
                 contador1++; // Incrementa el contador
-                SwingUtilities.invokeLater(() -> labelContadorHilo1.setText(String.valueOf(contador1))); // Actualiza la etiqueta en el EDT
+                SwingUtilities.invokeLater(() -> labelContadorHilo1.setText(String.valueOf(contador1)));
                 try {
-                    Thread.sleep(300); // Pausa de 300 ms
+                    Thread.sleep(300);
                 } catch (InterruptedException e) {
                     Thread.currentThread().interrupt();
                 }
