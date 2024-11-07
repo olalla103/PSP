@@ -1,10 +1,10 @@
 package main.hilosActs2.act2_6;
 
-public class HiloPrioridad1 extends Thread {
+public class EjemploPrioridad2 extends Thread {
     private int c = 0;
     private boolean stopHilo = false;
 
-    public HiloPrioridad1(String nombre) {
+    public EjemploPrioridad2(String nombre) {
         super(nombre);
     }
 
@@ -12,7 +12,7 @@ public class HiloPrioridad1 extends Thread {
         return c;
     }
 
-    public void pararHilo(int c) {
+    public void pararHilo() {
         stopHilo = true;
     }
 
@@ -23,6 +23,8 @@ public class HiloPrioridad1 extends Thread {
             } catch (Exception e) {
                 System.out.println(e.getMessage());
             }
+            c++;
         }
+        System.out.println("Fin hilo " + this.getName());
     }
 }
