@@ -5,11 +5,10 @@ public class Hilo extends Thread {
     Saldo saldo;
     String nombre;
 
-    public Hilo(Saldo saldo,String nombre) throws InterruptedException {
+    public Hilo(Saldo saldo, String nombre) {
         this.saldo = saldo;
-        cantidad = saldo.getSaldo();
+        this.cantidad = Math.random() * 100;
         this.nombre = nombre;
-
     }
 
     @Override

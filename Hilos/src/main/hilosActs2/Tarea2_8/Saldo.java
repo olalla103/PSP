@@ -19,7 +19,7 @@ public class Saldo {
     }
 
     // Getter y Setter con un sleep con una duración aleatoria
-    public Double getSaldo() throws InterruptedException {
+    public synchronized Double getSaldo() throws InterruptedException {
         int tiempo = (int) (Math.random() * 1000);
         sleep(tiempo);
         return saldo;
