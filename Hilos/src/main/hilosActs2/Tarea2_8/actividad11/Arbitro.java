@@ -1,64 +1,44 @@
 package main.hilosActs2.Tarea2_8.actividad11;
 
+import java.util.Random;
+
 public class Arbitro {
-    Integer numero, turno, totalJugadores;
+    private int numeroAdivinar;
+    private int numeroJugadores;
+    private int turno;
+    private boolean juegoTerminado;
 
-    public Arbitro(Integer totalJugadores) {
-        if (totalJugadores <= 0) {
-            System.out.println("No se puede jugar");
-        } else {
-            this.turno = (int) (Math.random() * (totalJugadores - 1 + 1)) + 1;
-            this.numero = (int) (Math.random() * 10 + 1);
-            this.totalJugadores = totalJugadores;
-        }
+    public Arbitro(int numeroJugadores) {
+        this.numeroJugadores = numeroJugadores;
+        this.numeroAdivinar = new Random().nextInt(10) + 1; // Número entre 1 y 10
+        this.turno = 0;
+        this.juegoTerminado = false;
+        System.out.println("NÚMERO A ADIVINAR: " + numeroAdivinar);
     }
 
-    public void compruebaJugada(Integer resultado) {
-        if (juegoAcabado(resultado)) {
-            System.out.println("El jugador ya tiene su resultado");
-        } else {
-            System.out.println("El jugador ha fallado, el siguiente en jugar es el jugador número " + turno++);
-            // tengo que hacer que vuelvan los turnos
+    public synchronized boolean comprobarJugada(int jugadorId, int numeroJugado) {
+        if (juegoTerminado) {
+            return true; // Se acertó el número
         }
-    }
 
-    public boolean juegoAcabado(Integer resultado) {
-        if (resultado == numero) {
+        System.out.println("Jugador" + (jugadorId + 1) + " dice: " + numeroJugado);
+        if (numeroJugado == numeroAdivinar) {
+            System.out.println("Jugador " + (jugadorId + 1) + " gana, ¡adivinó el número!");
+            juegoTerminado = true;
             return true;
-        } else {
-            return false;
         }
+
+        // Cambia el turno al siguiente jugador
+        turno = (turno + 1) % numeroJugadores;
+        System.out.println("Le toca a Jug" + (turno + 1));
+        return false;
     }
 
-    public Integer getNumero() {
-        return numero;
-    }
-
-    public void setNumero(Integer numero) {
-        this.numero = numero;
-    }
-
-    public Integer getTurno() {
+    public int getTurno() {
         return turno;
     }
 
-    public void setTurno(Integer turno) {
-        this.turno = turno;
-    }
-
-    public Integer getResultado() {
-        return resultado;
-    }
-
-    public void setResultado(Integer resultado) {
-        this.resultado = resultado;
-    }
-
-    public Integer getTotalJugadores() {
-        return totalJugadores;
-    }
-
-    public void setTotalJugadores(Integer totalJugadores) {
-        this.totalJugadores = totalJugadores;
+    public boolean isJuegoTerminado() {
+        return juegoTerminado;
     }
 }
