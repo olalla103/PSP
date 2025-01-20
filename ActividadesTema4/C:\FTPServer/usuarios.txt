@@ -1,0 +1,3 @@
+Usuario: user1, Contraseña: password1
+Usuario: user2, Contraseña: password2
+Usuario: user3, Contraseña: password3
