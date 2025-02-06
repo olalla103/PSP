@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="06619f0b-d48a-4710-95f1-5c3dae5cea19" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2nQ3XewDLDk5sdoV3jDEHEHPLMJ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Applet.ContadorApplet.executor": "Run",
+    "Applet.EjemploApplet.executor": "Run",
+    "Applet.Reloj.executor": "Run",
+    "Applet.TransformaAct1.executor": "Debug",
+    "Application.Ejemplo2_5.executor": "Run",
+    "Application.Ejemplo2_7.executor": "Run",
+    "Application.EjemploDead.executor": "Run",
+    "Application.Ejercicio6.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.MainEjemplo.executor": "Run",
+    "Application.MainThread.executor": "Run",
+    "Application.MiHilo.executor": "Run",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/usuario/DIU/Ex1Ev1DIU2023",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.4586207",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="ContadorApplet" type="Applet" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/jre1.8.0_431" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="main.hilosActividades.Act2_3.ContadorApplet" />
+      <module name="Hilos" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Reloj" type="Applet" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="$USER_HOME$/Descargas/jre1.8.0_431" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="main.hilosActividades.Act2_3.Reloj" />
+      <module name="Hilos" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="06619f0b-d48a-4710-95f1-5c3dae5cea19" name="Changes" comment="" />
+      <created>1728891513363</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1728891513363</updated>
+      <workItem from="1728891514462" duration="1413000" />
+      <workItem from="1728892986269" duration="39000" />
+      <workItem from="1728893030021" duration="1273000" />
+      <workItem from="1728894420208" duration="1566000" />
+      <workItem from="1728895992229" duration="1199000" />
+      <workItem from="1728899831488" duration="175000" />
+      <workItem from="1728979364410" duration="38000" />
+      <workItem from="1729165928514" duration="2876000" />
+      <workItem from="1729244837461" duration="62000" />
+      <workItem from="1729495370456" duration="2192000" />
+      <workItem from="1729497567545" duration="3266000" />
+      <workItem from="1729501366323" duration="8000000" />
+      <workItem from="1729582072741" duration="8000" />
+      <workItem from="1730104060269" duration="115000" />
+      <workItem from="1730104440290" duration="417000" />
+      <workItem from="1730108401297" duration="8682000" />
+      <workItem from="1730121092930" duration="60000" />
+      <workItem from="1730190159744" duration="15000" />
+      <workItem from="1730713582885" duration="24000" />
+      <workItem from="1730714045103" duration="2732000" />
+      <workItem from="1730885914209" duration="54000" />
+      <workItem from="1730984839691" duration="1991000" />
+      <workItem from="1731063017068" duration="192000" />
+      <workItem from="1731313418914" duration="6531000" />
+      <workItem from="1731399605743" duration="10000" />
+      <workItem from="1731399619881" duration="132000" />
+      <workItem from="1731417514527" duration="1324000" />
+      <workItem from="1731490010587" duration="5000" />
+      <workItem from="1731918500565" duration="6827000" />
+      <workItem from="1732004455576" duration="7000" />
+      <workItem from="1732020769611" duration="2837000" />
+      <workItem from="1732094727637" duration="23000" />
+      <workItem from="1732173605715" duration="2542000" />
+      <workItem from="1732189038642" duration="46000" />
+      <workItem from="1732189515970" duration="657000" />
+      <workItem from="1732267160659" duration="112000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.configurationType" implementationName="Applet" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/hilosActividades/Act2_4/MiHilo.java</url>
+          <line>17</line>
+          <properties class="main.hilosActividades.Act2_4.MiHilo">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
